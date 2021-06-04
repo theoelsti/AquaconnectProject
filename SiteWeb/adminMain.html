@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <!--CSS-->
+    <link rel="stylesheet" href='assets/css/style.css'>
+    <link rel="stylesheet" href='assets/css/admin.css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+    <!--Bootstrap JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<body>
+<div class="wrapper">
+    <div>
+        <h1>Bienvenue administrateur <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h1>
+    </div>
+    <p>
+        <a href="reset-password.php" title='Changer mon mot de passe' class="btn btn-warning" style="background-color:#ffc107; text-decoration: none;">  <i data-feather="key"></i></a>
+        <a href="logout.php" title='Déconnexion' class="btn btn-danger"><i data-feather="log-out"></i></a>
+    </p>
+</div>
+
+</body>
+</html>

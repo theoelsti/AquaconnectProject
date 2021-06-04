@@ -1,0 +1,85 @@
+.user-wrapper{
+    background-color: white;
+    width: 30%; 
+    margin-left: 35%;
+    margin-top: 5%;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.inner_wrapper{
+    padding: 10px;
+}
+
+.info_wrapper{
+    margin-left: 45%;
+    margin-top: 1%;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    width: 10%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+
+}
+.info_wrapper_inner{
+    padding: 1%;
+}
+.inner_wrapper_2 > p{
+    font-size: 25px;
+}
+.infos > a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.offre_actuelle{
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 5px;
+    
+}
+
+
+.contract-container{
+    height: 7%;
+    display: flex;
+    margin: 2%;
+    background-color: #fefefe;
+}
+.contracts-container{
+    width: 50%;
+    height: auto;   
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#contracts-title{
+    font-size: 150%  ;
+}   
+.left-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.right-container{
+    display: block;
+    font-size: 120%;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 1%;
+    width: 50%;
+}
+.btn-renew{
+    height: 40px;
+}
+.offer-buttons{
+    text-align: left;
+}

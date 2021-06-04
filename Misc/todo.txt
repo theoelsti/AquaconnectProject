@@ -1,0 +1,8 @@
+-- Client -- 
+    - 1 bloc pour la qualité de l'eau 
+    - Contacter le service client
+    - Information sur le cookie
+-- Oral --
+    - Tableau comparatif
+
+- Footer

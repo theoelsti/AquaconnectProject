@@ -1,0 +1,1 @@
+function deleteAccount(){var confirm=prompt("Etes vous sur de supprimer définivement votre compte AquaConnect ? \n Entrez 'Confirmer' afin de continuer.");if(confirm==null||confirm!=="Confirmer"){alert("Le compte n'a pas été supprimé.")}else{alert("Le compte va être supprimé. Nous allons détruire toutes les données liées à celui-ci.");document.location.href='deleteAccount.php'}}

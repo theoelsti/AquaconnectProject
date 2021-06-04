@@ -1,0 +1,20 @@
+:root {
+    --text1-color:#7ba6b6;
+    --text2-color:#12788e;
+    --elements-color:   #015479;
+    --background-color: #d5dfe3AA;
+}
+body{
+    background-color: var(--background-color);
+    font: 14px sans-serif;
+}
+.wrapper{
+    width: 360px; 
+    margin-left: 40%;
+    justify-content: center;
+    display: block;
+    align-items: center;
+}
+.btn{
+    background-color: #015479;
+}

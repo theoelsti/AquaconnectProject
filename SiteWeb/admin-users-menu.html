@@ -1,0 +1,34 @@
+</select>
+    
+            <div class='input-group date' id='datepicker'>
+                <input name='date' onClick=checkDate() onClick=getCalendarDate() type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        
+            <input class="btn btn-primary change-date" style="margin-top: 3%;" type="submit" id='submit-date' value="Modifier">
+            </form>
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+<script >
+    $(function () {
+        $('#datepicker').datepicker({
+            format: "dd/mm/yyyy",
+            autoclose: true,
+            todayHighlight: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            autoclose: true,
+            changeMonth: true,
+            changeYear: true,
+            orientation: "button"
+        });
+    });
+</script>

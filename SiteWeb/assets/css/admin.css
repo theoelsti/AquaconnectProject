@@ -1,0 +1,48 @@
+.select-name, .select-offer{
+    width: 40%;
+    left: 40%;
+    height: 4vh;
+    margin: auto;
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+
+#admin-menu-wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    
+}
+#admin-menu-offer{
+    display: block;
+    width: 25%;
+}
+#admin-menu-calendar{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.date{
+    width: 60%;
+    display: flex;
+    left: 20%;
+}
+
+.admin-menu-wrapper{
+    display: block;
+    width: 100vw;
+}
+.admin-menu-block{
+    background-color: white;
+    margin: 10px;
+    height: 30vh;
+    border-radius: 20px;
+}
+/* .admin-menu-block-content{
+    margin-top: 5vh;
+
+} */
+.admin-menu-block-title{
+    font-size: 100%;   
+}

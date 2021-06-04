@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+
+    <link rel="stylesheet" href='./assets/css/user.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="user-wrapper">
+    <div class="inner_wrapper">
+        <div class='inner_wrapper_2' style="margin-bottom: 3%;">
+            <p>Bienvenue à bord, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</p>
+        </div>
+        <p>
+            <a href="reset-password.php" title='Changer mon mot de passe' class="btn btn-warning" style="background-color:#ffc107; text-decoration: none;">  <i data-feather="key"></i></a>
+            <a href="logout.php" title='Déconnexion' class="btn btn-danger"><i data-feather="log-out"></i></a>
+            <a onClick='deleteAccount()' title='Supprimer mon compte' class="btn btn-dark"><i data-feather="trash"></i></a>
+        </p>
+    </div> 
+</div>
+</div>
+
+<div class="info_wrapper">
+    <div class="info_wrapper_inner">
+
+        <a href="#" class="btn btn-light" title='Service client'><i class="bi bi-headset"></i>  </a>
+    
+    </div>
+<!-- 
+    <div class="releves">
+        <a>Vos relevés pour le numero matériel <?php echo htmlspecialchars($_SESSION['hwid'])?> : </a>
+    </div> -->
+</div>
+<script src="./assets/scripts/user.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>

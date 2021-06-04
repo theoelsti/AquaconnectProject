@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: "widelatin";
+    src: url(../fonts/Nexus_Font.TTF) format("truetype");
+}
+
+.inverted {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.toaster-container {
+    max-width: 450px;
+    min-width: 60px;
+    margin-bottom: 10px;
+    background-color: #d31111;
+    color: #fff;
+    border-radius: 2px;
+    padding: 16px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.toaster-container.top-right {
+    right: 1%;
+    top: 30px;
+}
+
+.toaster-container.top-right{
+    -webkit-animation: fadeinTop 0.5s;
+    animation: fadeinTop 0.5s;
+}
+
+.toaster-close {
+    font-size: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+@-webkit-keyframes fadeinTop {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+@keyframes fadeinTop {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeoutTop {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+@keyframes fadeoutTop {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}

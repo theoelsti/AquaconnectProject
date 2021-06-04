@@ -1,0 +1,56 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script src="./assets/scripts/notifs.js"></script>
+<link rel="stylesheet" href='./assets/css/notifs.css'>
+<link rel="stylesheet" href='./assets/css/values.css'>
+
+
+<p class="lastValues">Derniers relevés (valeurs du <a class="dateLast"></a> à <a class="heureLast"></a>):</p>
+<div class="last-data-container ">
+    <div class="last-data-block ph">
+        <div class="last-data-block-title">PH</div>
+        <div class="last-data-block-value phValue" ></div>
+    </div>
+
+    <div class="last-data-block temp">
+        <div class="last-data-block-title">Temperature</div>
+        <div class="last-data-block-value tempValue" id="tempValue"></div>
+        <div class="change-value">
+        
+        <input type="range" class="custom-range" min="15" max="25" step="0.25" id="tempRange" oninput="showVal(0,this.value)" onchange="showVal(0,this.value)">
+
+
+        </div>
+    </div>
+
+    <div class="last-data-block lum">
+        <div class="last-data-block-title">Luminosite</div>
+        <div class="last-data-block-value lumValue" id="lumValue"></div>
+
+        <div class="change-value">
+            <input type="range" class="custom-range" min="0" max="100" step="1" id="lumRange" oninput="showVal(1,this.value)" onchange="showVal(1,this.value)">
+        </div>
+    </div>
+</div>
+
+<button type="button" onClick='displayChangeMenu()' class="btn btn-warning" style="background-color: #ffc107;border-color: #ffc107; margin-top: 1%;" id="valueChangeButton">Modifier</button>
+
+<h1 class="histTitle">Historique des relevés</h1>
+
+<script src="./assets/scripts/values.js"></script>
+
+<button type="button" class="btn btn-light history-btn" onClick='displayHistory()' title="Consulter l'historique des relevés"><i class="bi bi-clock-history"></i></button>
+<button type="button" class="btn btn-light history-btn" title="Reinitialiser les dates" onclick='reloadToZero()'><i class="bi bi-arrow-repeat"></i></button>
+
+
+<div style="width: 70%; margin-left: 15%;" class="chart-container">
+    <input class="date" type="text" name="datetimes"/>
+<button onClick=changeToDate() type='button' class="btn">Valider</button>
+<canvas id="myChart" width="15%" height="5%"></canvas>
+<canvas id="lumChart" width="15%" height="5%"></canvas>
+
+
+</div>
